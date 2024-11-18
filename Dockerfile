@@ -1,5 +1,6 @@
-# Use a Linix image with Tomcat 10
-FROM tomcat:10.1.0-M5-jdk16-openjdk-slim-bullseye
+# Use TomEE 10.0.27 with JDK 21
+FROM tomee:10.0.27-jdk-21
 
-# Copy in our ROOT.war to the right place in the container
-COPY ROOT.war /usr/local/tomcat/webapps/
+# Copy the ROOT.war file to the appropriate directory
+COPY ROOT.war /usr/local/tomee/webapps/
+
